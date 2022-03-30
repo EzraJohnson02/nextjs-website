@@ -1,16 +1,20 @@
 import Head from 'next/head'
 import SimpleLayout from '../components/layout/simple'
-import 'bootstrap/dist/css/bootstrap.min.css';  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Typical from 'react-typical'
 
 export default function Home(initialData) {
   return (
     <SimpleLayout>
       <section className="jumbotron text-center">
         <div className="container">
-          <h1>Subscribe to GyanBlog</h1>
-          <p className="lead text-muted">
-            Learn and Share
-          </p>
+          <h1>Howdy! I'm Ezra, a </h1>
+          <Typical
+            steps={['software engineer', 5000, 'sophomore @ Caltech', 5000,
+          'sprinter on the track team', 5000]}
+            loop={Infinity}
+            wrapper="p"
+          />
         </div>
       </section>
 
@@ -19,7 +23,7 @@ export default function Home(initialData) {
         <h1>Hey People</h1>
       </div>
       <div className="row">
-        <typing-bar/>
+        <typing-bar />
       </div>
     </SimpleLayout>
   )
