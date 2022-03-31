@@ -9,11 +9,11 @@ export default function Navbar() {
         <Link href="/">
           <a className="navbar-brand">Ezra Johnson</a>
         </Link>
-        <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </Button>
 
-        <div className="collapse navbar-collapse" id="navbarsExample07XL">
+        <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link href="/">
