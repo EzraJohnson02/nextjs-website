@@ -113,6 +113,10 @@
   margin-left: 0.5rem;
 }
 
+.big-icon {
+  font-size: 96px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

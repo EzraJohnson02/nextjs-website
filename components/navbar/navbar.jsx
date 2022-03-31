@@ -5,13 +5,13 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <Nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-xl">
+      <div className="container-fluid">
         <Link href="/">
           <a className="navbar-brand">Ezra Johnson</a>
         </Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+        <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </Button>
 
         <div className="collapse navbar-collapse" id="navbarsExample07XL">
           <ul className="navbar-nav mr-auto">

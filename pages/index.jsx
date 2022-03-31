@@ -3,6 +3,8 @@ import SimpleLayout from '../components/layout/simple'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Typical from 'react-typical'
 import Image from 'next/image'
+import { Container, Row, Col } from 'react-bootstrap';
+import { Icon } from '@iconify/react';
 
 export default function Home(initialData) {
   return (
@@ -18,16 +20,32 @@ export default function Home(initialData) {
           />
         </div>
       </section>
-      
-      <div className="col">
-        <Image alt="Profile Photo" src={"/profile-photo.jpg"} width={200} height={300} />
-      </div>
-      <div className="col">
-        <h3>This is my website. It should give a deeper understanding of my
-          skills and interests than a simple resume, and it is more fun to
-          create. Let me know if you have any ways I could improve it!
-        </h3>
-      </div>
+
+      <Container fluid>
+        <Row>
+          <Col>
+            <Image alt="Profile Photo" src={"/profile-photo.jpg"} width={200} height={300} />
+          </Col>
+          <Col>
+          <h3>This is my website. It should give a deeper understanding of my
+            skills and interests than a simple resume, and it is more fun to
+            create. Let me know if you have any ways I could improve it!
+          </h3>
+        </Col>
+        </Row>
+
+        <Row> 
+        <Col><Icon icon="akar-icons:python-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="la:java" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="ion:logo-javascript" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="cib:c" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="akar-icons:react-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="akar-icons:nextjs-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="akar-icons:bootstrap-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="akar-icons:html-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col><Icon icon="akar-icons:css-fill" style={{ fontSize: '48px' }}/></Col>
+        </Row>
+      </Container>
     </SimpleLayout>
   )
 }
