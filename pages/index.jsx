@@ -20,7 +20,9 @@ export default function Home(initialData) {
 
       <typing-bar />
       <div className="row">
-        <h1>Hey People</h1>
+        <h3>This is my website. It should give a deeper understanding of my
+          skills and interests than a simple resume, and it is more fun to
+          create. Let me know if you have any ways I could improve it!</h3>
       </div>
       <div className="row">
         <typing-bar />

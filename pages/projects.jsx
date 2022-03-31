@@ -1,34 +1,81 @@
-import Link from 'next/link'
 import SimpleLayout from '../components/layout/simple'
-import ProjectsJumbo from '../components/jumbo/projects'
+import Carousel from 'react-bootstrap/Carousel'
+import { CarouselItem } from 'react-bootstrap'
 
 export default function Projects(initialData) {
   return (
-    <SimpleLayout preContainer={<ProjectsJumbo />}>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card mb-4 shadow-sm">
-            <Link href={`/#`}><a>
-              <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            </a></Link>
-            <div className="card-body">
-              <h3>Project 1</h3>
-              <p className="card-text">Hey Project</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card mb-4 shadow-sm">
-            <Link href={`/#`}><a>
-              <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            </a></Link>
-            <div className="card-body">
-              <h3>Project 2</h3>
-              <p className="card-text">Hey Project</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <SimpleLayout>
+      <Carousel variant="dark">
+      <CarouselItem style={{ 'height': "400px" }} >
+          <img
+            className="d-block w-100"
+            src="/space-launch-instructions.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+        <CarouselItem style={{ 'height': "400px" }} >
+          <img
+            className="d-block w-100"
+            src="/space-launch-gameplay.png"
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+        <CarouselItem style={{ 'height': "400px" }} >
+          <img
+            className="d-block w-100"
+            src="/space-launch-endscreen.png"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+      </Carousel>
+      
+      <Carousel variant="dark">
+      <CarouselItem style={{ 'height': "800px" }} >
+          <img
+            className="d-block w-100"
+            src="/snake-instructions.png"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+        <CarouselItem style={{ 'height': "800px" }} >
+          <img
+            className="d-block w-100"
+            src="/snake-2d-play.png"
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+        <CarouselItem style={{ 'height': "800px" }} >
+          <img
+            className="d-block w-100"
+            src="/snake-3d-play.png"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </CarouselItem>
+      </Carousel>
     </SimpleLayout>
   )
 }
