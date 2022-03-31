@@ -31,7 +31,7 @@ export default function Experience() {
                 alt="Second slide"
               />
               <div className="card-body">
-                <h3>Meta SWE</h3>
+                <h3>Meta SWE Intern</h3>
                 <p className="card-text">Upcoming!</p>
               </div>
             </div>
