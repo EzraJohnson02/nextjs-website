@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import SimpleLayout from '../components/layout/simple'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Typical from 'react-typical'
@@ -44,6 +43,7 @@ export default function Home(initialData) {
         <Col><Icon icon="akar-icons:bootstrap-fill" style={{ fontSize: '48px' }}/></Col>
         <Col><Icon icon="akar-icons:html-fill" style={{ fontSize: '48px' }}/></Col>
         <Col><Icon icon="akar-icons:css-fill" style={{ fontSize: '48px' }}/></Col>
+        <Col> <a href="https://github.com/EzraJohnson02"><Icon icon="akar-icons:github-fill" style={{ fontSize: '48px' }}/></a></Col>
         </Row>
       </Container>
     </SimpleLayout>
