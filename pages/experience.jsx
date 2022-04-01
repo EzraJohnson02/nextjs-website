@@ -1,13 +1,11 @@
-import Link from 'next/link'
 import SimpleLayout from '../components/layout/simple'
-import ExperienceJumbo from '../components/jumbo/experience'
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Experience() {
   return (
 
 
-    <SimpleLayout preContainer={<ExperienceJumbo />}>
+    <SimpleLayout>
       <Container fluid>
         <Row>
           <Col>

@@ -1,12 +1,11 @@
 import SimpleLayout from '../components/layout/simple'
 import Carousel from 'react-bootstrap/Carousel'
 import { CarouselItem } from 'react-bootstrap'
-import ProjectsJumbo from '../components/jumbo/projects'
 
 
 export default function Projects(initialData) {
   return (
-    <SimpleLayout preContainer={<ProjectsJumbo />}>
+    <SimpleLayout>
       <Carousel variant="dark" interval={10000}>
         <CarouselItem style={{ 'height': "400px" }} >
           <img
