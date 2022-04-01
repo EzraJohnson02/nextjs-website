@@ -49,18 +49,8 @@ export default function Projects(initialData) {
         <CarouselItem style={{ 'height': "800px" }} >
           <img
             className="d-block w-100"
-            src="/snake-instructions.png"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Instructions Page</h3>
-          </Carousel.Caption>
-        </CarouselItem>
-        <CarouselItem style={{ 'height': "800px" }} >
-          <img
-            className="d-block w-100"
             src="/snake-2d-play.png"
-            alt="Second slide"
+            alt="First slide"
           />
           <Carousel.Caption>
             <h3>2D Rendering</h3>
@@ -70,7 +60,7 @@ export default function Projects(initialData) {
           <img
             className="d-block w-100"
             src="/snake-3d-play.png"
-            alt="Third slide"
+            alt="Second slide"
           />
           <Carousel.Caption>
             <h3>3D Rendering</h3>
