@@ -1,7 +1,6 @@
 import SimpleLayout from '../components/layout/simple'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Typical from 'react-typical'
-import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 
@@ -23,27 +22,27 @@ export default function Home(initialData) {
       <Container fluid>
         <Row>
           <Col>
-            <Image alt="Profile Photo" src={"/profile-photo.jpg"} width={200} height={300} />
+            <img className='img-fluid rounded-pill' alt="Profile Photo" src={"/profile-photo.jpg"}  />
           </Col>
           <Col>
-          <h3>This is my website. It should give a deeper understanding of my
-            skills and interests than a simple resume, and it is more fun to
-            create. Let me know if you have any ways I could improve it!
-          </h3>
-        </Col>
+            <h3><br></br><br></br>This is my website. It should give a deeper understanding of my
+              skills and interests than a simple resume, and it is more fun to
+              create. Let me know if you have any ways I could improve it!
+            </h3>
+          </Col>
         </Row>
 
-        <Row> 
-        <Col><Icon icon="akar-icons:python-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="la:java" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="ion:logo-javascript" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="cib:c" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="akar-icons:react-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="akar-icons:nextjs-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="akar-icons:bootstrap-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="akar-icons:html-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col><Icon icon="akar-icons:css-fill" style={{ fontSize: '48px' }}/></Col>
-        <Col> <a href="https://github.com/EzraJohnson02"><Icon icon="akar-icons:github-fill" style={{ fontSize: '48px' }}/></a></Col>
+        <Row>
+          <Col><Icon icon="akar-icons:python-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="la:java" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="ion:logo-javascript" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="cib:c" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="akar-icons:react-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="akar-icons:nextjs-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="akar-icons:bootstrap-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="akar-icons:html-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col><Icon icon="akar-icons:css-fill" style={{ fontSize: '48px' }} /></Col>
+          <Col> <a href="https://github.com/EzraJohnson02"><Icon icon="akar-icons:github-fill" style={{ fontSize: '48px' }} /></a></Col>
         </Row>
       </Container>
     </SimpleLayout>
