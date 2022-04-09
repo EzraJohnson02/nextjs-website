@@ -1,4 +1,4 @@
-import SimpleLayout from '../components/layout/simple'
+import SimpleLayout from '../components/simple'
 import Carousel from 'react-bootstrap/Carousel'
 import { CarouselItem } from 'react-bootstrap'
 

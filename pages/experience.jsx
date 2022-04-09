@@ -1,4 +1,4 @@
-import SimpleLayout from '../components/layout/simple'
+import SimpleLayout from '../components/simple'
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Experience() {
