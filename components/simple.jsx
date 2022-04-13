@@ -1,4 +1,4 @@
-import Navbar from './navbar'
+import Navbar from './myNavbar'
 import React from 'react'
 
 export default function SimpleLayout(props) {
