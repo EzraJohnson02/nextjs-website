@@ -10,7 +10,6 @@ export default function Resume() {
                 layout="responsive"
                 width={800}
                 height={1000}
-                quality="100"
             />
         </SimpleLayout>
     );
