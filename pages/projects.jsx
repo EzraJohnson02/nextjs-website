@@ -3,7 +3,7 @@ import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { CarouselItem } from "react-bootstrap";
 
-export default function Projects(initialData) {
+export default function Projects() {
     return (
         <SimpleLayout>
             <Carousel interval={10000} variant="dark">
