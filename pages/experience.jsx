@@ -43,7 +43,17 @@ export default function Experience() {
     return (
         <SimpleLayout>
             <div style={{ width: { width }, height: { height } }}>
-                <Chrono items={items} mode="VERTICAL_ALTERNATING" />
+                <Chrono
+                    items={items}
+                    mode="VERTICAL_ALTERNATING"
+                    theme={{
+                        primary: "black",
+                        secondary: "white",
+                        cardBgColor: "white",
+                        cardForeColor: "black",
+                        titleColor: "black",
+                    }}
+                />
             </div>
         </SimpleLayout>
     );
