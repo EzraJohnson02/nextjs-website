@@ -1,15 +1,17 @@
 import SimpleLayout from "../components/simple";
+import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
 import { CarouselItem } from "react-bootstrap";
 
 export default function Projects(initialData) {
     return (
         <SimpleLayout>
-            <Carousel variant="dark" interval={10000}>
+            <Carousel interval={10000} variant="dark">
                 <CarouselItem style={{ height: "400px" }}>
-                    <img
+                    <Image
                         className="d-block w-100"
                         src="/space-launch-instructions.png"
+                        layout="fill"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -17,20 +19,22 @@ export default function Projects(initialData) {
                     </Carousel.Caption>
                 </CarouselItem>
                 <CarouselItem style={{ height: "400px" }}>
-                    <img
+                    <Image
                         className="d-block w-100"
                         src="/space-launch-gameplay.png"
                         alt="Second slide"
+                        layout="fill"
                     />
                     <Carousel.Caption>
                         <h3>Gameplay</h3>
                     </Carousel.Caption>
                 </CarouselItem>
                 <CarouselItem style={{ height: "400px" }}>
-                    <img
+                    <Image
                         className="d-block w-100"
                         src="/space-launch-endscreen.png"
                         alt="Third slide"
+                        layout="fill"
                     />
                     <Carousel.Caption>
                         <h3>Endscreen</h3>
@@ -51,6 +55,7 @@ export default function Projects(initialData) {
                         className="d-block w-100"
                         src="/snake-2d-play.png"
                         alt="First slide"
+                        layout="fill"
                     />
                     <Carousel.Caption>
                         <h3>2D Rendering</h3>
@@ -61,6 +66,7 @@ export default function Projects(initialData) {
                         className="d-block w-100"
                         src="/snake-3d-play.png"
                         alt="Second slide"
+                        layout="fill"
                     />
                     <Carousel.Caption>
                         <h3>3D Rendering</h3>
