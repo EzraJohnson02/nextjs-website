@@ -86,12 +86,6 @@ export default function Home(initialData) {
                     </Col>
                     <Col>
                         <Icon
-                            icon="akar-icons:bootstrap-fill"
-                            style={{ fontSize: "48px" }}
-                        />
-                    </Col>
-                    <Col>
-                        <Icon
                             icon="akar-icons:html-fill"
                             style={{ fontSize: "48px" }}
                         />
@@ -107,6 +101,15 @@ export default function Home(initialData) {
                         <a href="https://github.com/EzraJohnson02">
                             <Icon
                                 icon="akar-icons:github-fill"
+                                style={{ fontSize: "48px" }}
+                            />
+                        </a>
+                    </Col>
+                    <Col>
+                        {" "}
+                        <a href="https://www.linkedin.com/in/ezra-johnson/">
+                            <Icon
+                                icon="akar-icons:linkedin-box-fill"
                                 style={{ fontSize: "48px" }}
                             />
                         </a>
