@@ -12,7 +12,7 @@ export default function Experience() {
             cardTitle: "Meta",
             cardSubtitle: "Instagram",
             cardDetailedText:
-                "I will work on the Instagram Sharing Interactions team this upcoming summer!",
+                "I worked on the Instagram Sharing Interactions team to build up the backend for a new feature for Instagram Stories! I learned about HTTP, Django, and APIs in order to build the product.",
         },
 
         {
