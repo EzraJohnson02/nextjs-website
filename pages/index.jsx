@@ -14,9 +14,11 @@ export default function Home(initialData) {
                         steps={[
                             "software engineer",
                             5000,
-                            "junior @ Caltech",
+                            "sophomore @ Caltech",
                             5000,
                             "thrower on the track team",
+                            5000,
+                            "cat owner",
                             5000,
                         ]}
                         loop={Infinity}
