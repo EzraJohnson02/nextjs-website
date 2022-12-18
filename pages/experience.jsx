@@ -8,6 +8,12 @@ export default function Experience() {
 
     const items = [
         {
+            title: "Summer 2023",
+            cardTitle: "Stripe",
+            cardDetailedText: "I will work for Stripe this upcoming summer!",
+        },
+
+        {
             title: "June 2022 - September 2022",
             cardTitle: "Meta",
             cardSubtitle: "Instagram",
