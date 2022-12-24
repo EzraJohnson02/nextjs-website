@@ -6,8 +6,8 @@ import SimpleLayout from "../components/simple";
 export default function Resume() {
     return (
         <SimpleLayout>
-            <Image
-                src="/Ezra_Johnson_Resume.jpg"
+            <iframe
+                src="/Ezra_Johnson_Resume.pdf"
                 layout="responsive"
                 width={800}
                 height={1000}
