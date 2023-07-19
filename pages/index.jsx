@@ -14,11 +14,9 @@ export default function Home(initialData) {
                         steps={[
                             "software engineer",
                             5000,
-                            "sophomore @ Caltech",
+                            "junior @ Caltech",
                             5000,
-                            "thrower on the track team",
-                            5000,
-                            "cat owner",
+                            "captain on the track team",
                             5000,
                         ]}
                         loop={Infinity}
@@ -31,7 +29,7 @@ export default function Home(initialData) {
                 <Row>
                     <Col>
                         <Card style={{ width: "18rem" }}>
-                            <Card.Img variant="top" src="/profile-photo.jpg" />
+                            <Card.Img variant="top" src="/profile_photo.jpg" />
                             <Card.Body>
                                 <Card.Title style={{ textAlign: "center" }}>
                                     Me!
@@ -59,6 +57,12 @@ export default function Home(initialData) {
                     <Col>
                         <Icon
                             icon="akar-icons:python-fill"
+                            style={{ fontSize: "48px" }}
+                        />
+                    </Col>
+                    <Col>
+                        <Icon
+                            icon="simple-icons:ruby"
                             style={{ fontSize: "48px" }}
                         />
                     </Col>
@@ -97,6 +101,9 @@ export default function Home(initialData) {
                             icon="akar-icons:css-fill"
                             style={{ fontSize: "48px" }}
                         />
+                    </Col>
+                    <Col>
+                        <Icon icon="tabler:sql" style={{ fontSize: "48px" }} />
                     </Col>
                     <Col>
                         {" "}

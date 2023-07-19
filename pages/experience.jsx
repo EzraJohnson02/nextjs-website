@@ -8,9 +8,10 @@ export default function Experience() {
 
     const items = [
         {
-            title: "Summer 2023",
+            title: "June 2023 - September 2023",
             cardTitle: "Stripe",
-            cardDetailedText: "I will work for Stripe this upcoming summer!",
+            cardDetailedText:
+                "I am working on the Treasury team at Stripe! My work involves changing the existing API to allow for us to present users with trace IDs for their transactions. I learned Ruby and SQL from this position.",
         },
 
         {

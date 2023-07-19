@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import Link from "next/link";
 
 export default function MyNavbar() {
     return (
