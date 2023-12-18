@@ -8,10 +8,18 @@ export default function Experience() {
 
     const items = [
         {
-            title: "June 2023 - September 2023",
+            title: "June 2024 - September 2024",
             cardTitle: "Stripe",
             cardDetailedText:
-                "I am working on the Treasury team at Stripe! My work involves changing the existing API to allow for us to present users with trace IDs for their transactions. I learned Ruby and SQL from this position.",
+                "I am returning to Stripe for my final undergraduate internship!",
+        },
+
+        {
+            title: "June 2023 - September 2023",
+            cardTitle: "Stripe",
+            cardSubtitle: "Treasury",
+            cardDetailedText:
+                "I worked on the Treasury team at Stripe! My work involved changing the existing API to allow for us to present users with trace IDs for their transactions. I utilized Ruby and typescript in this position.",
         },
 
         {
