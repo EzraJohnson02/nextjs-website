@@ -19,7 +19,7 @@ export default function Experience() {
             cardTitle: "Stripe",
             cardSubtitle: "Treasury",
             cardDetailedText:
-                "I worked on the Treasury team at Stripe! My work involved changing the existing API to allow for us to present users with trace IDs for their transactions. I utilized Ruby and typescript in this position.",
+                "My work on the Treasury team at Stripe involved changing the existing API to allow for us to present users with trace IDs for their transactions. I utilized Ruby and typescript in this position.",
         },
 
         {
