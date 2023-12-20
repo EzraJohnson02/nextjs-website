@@ -1,7 +1,7 @@
 import SimpleLayout from "../components/simple";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Typical from "react-typical";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 import { Icon } from "@iconify/react";
 
 export default function Home(initialData) {
@@ -10,17 +10,14 @@ export default function Home(initialData) {
             <section className="jumbotron text-center">
                 <div className="container">
                     <h1>Howdy! I'm Ezra</h1>
-                    <Typical
-                        steps={[
-                            "software engineer",
-                            5000,
-                            "junior @ Caltech",
-                            5000,
-                            "captain on the track team",
-                            5000,
-                        ]}
-                        loop={Infinity}
-                        wrapper="p"
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString(
+                                    "Software Engineer @ Stripe and Captain of the Varsity Track and Field team @ Caltech"
+                                )
+                                .start();
+                        }}
                     />
                 </div>
             </section>
@@ -41,13 +38,15 @@ export default function Home(initialData) {
                         <h4>
                             <br />
                             <br />
-
-                            <Typical
-                                style={{ textAlign: "center" }}
-                                steps={[
-                                    "This is my website. It should give a deeper understanding of my skills and interests than a simple resume, and it has been more fun for me to create. Let me know if you have any ways I could improve it!",
-                                ]}
-                                wrapper="p"
+                            <Typewriter
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString(
+                                            "This is my website. It should give a deeper understanding of my skills and interests than a simple resume, and it has been more fun for me to create. Let me know if you have any ways I could improve it!"
+                                        )
+                                        .pauseFor(2500)
+                                        .start();
+                                }}
                             />
                         </h4>
                     </Col>
