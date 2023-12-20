@@ -10,7 +10,6 @@ export default function Resume() {
         <SimpleLayout>
             <iframe
                 src="/Ezra_Johnson_Resume.pdf"
-                layout="responsive"
                 width={width}
                 height={height}
                 alt="My resume"
