@@ -103,9 +103,6 @@ export default function Home(initialData) {
                         />
                     </Col>
                     <Col>
-                        <Icon icon="tabler:sql" style={{ fontSize: "48px" }} />
-                    </Col>
-                    <Col>
                         {" "}
                         <a href="https://github.com/EzraJohnson02">
                             <Icon
