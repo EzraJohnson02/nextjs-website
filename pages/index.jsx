@@ -11,12 +11,16 @@ export default function Home(initialData) {
                 <div className="container">
                     <h1>Howdy! I'm Ezra</h1>
                     <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter
-                                .typeString(
-                                    "Software Engineer @ Stripe and Captain of the Varsity Track and Field team @ Caltech"
-                                )
-                                .start();
+                        options={{
+                            strings: [
+                                "Software Engineer Intern @ Stripe",
+                                "Captain of Varsity Track and Field Team",
+                                "Junior @ Caltech",
+                            ],
+                            autoStart: true,
+                            loop: true,
+                            delay: 60,
+                            pauseFor: 3000,
                         }}
                     />
                 </div>
@@ -39,13 +43,13 @@ export default function Home(initialData) {
                             <br />
                             <br />
                             <Typewriter
-                                onInit={(typewriter) => {
-                                    typewriter
-                                        .typeString(
-                                            "This is my website. It should give a deeper understanding of my skills and interests than a simple resume, and it has been more fun for me to create. Let me know if you have any ways I could improve it!"
-                                        )
-                                        .pauseFor(2500)
-                                        .start();
+                                options={{
+                                    strings:
+                                        "This is my website. It should give a deeper understanding of my skills and interests than a simple resume, and it has been more fun for me to create. Let me know if you have any ways I could improve it!",
+                                    autoStart: true,
+                                    loop: false,
+                                    delay: 60,
+                                    pauseFor: 3000,
                                 }}
                             />
                         </h4>
