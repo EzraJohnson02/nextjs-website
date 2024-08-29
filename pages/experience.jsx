@@ -11,7 +11,7 @@ export default function Experience() {
             title: "June 2024 - September 2024",
             cardTitle: "Stripe",
             cardDetailedText:
-                "I am returning to Stripe for my final undergraduate internship!",
+                "I returned to Stripe to work on the Merchant Support Experience team. My project involved adding personalization to the Universal Help self-service support widget. I utilized Ruby and TypeScript.",
         },
 
         {
@@ -19,7 +19,7 @@ export default function Experience() {
             cardTitle: "Stripe",
             cardSubtitle: "Treasury",
             cardDetailedText:
-                "My work on the Treasury team at Stripe involved changing the existing API to allow for us to present users with trace IDs for their transactions. I utilized Ruby and typescript in this position.",
+                "My work on the Treasury team at Stripe involved changing the existing API to allow for us to present users with trace IDs for their transactions. I utilized Ruby and TypeScript in this position.",
         },
 
         {

@@ -9,13 +9,13 @@ export default function Home(initialData) {
         <SimpleLayout>
             <section className="jumbotron text-center">
                 <div className="container">
-                    <h1>Howdy! I'm Ezra</h1>
+                    <h1>Hello! I'm Ezra Johnson</h1>
                     <Typewriter
                         options={{
                             strings: [
                                 "Software Engineer Intern @ Stripe",
                                 "Captain of Varsity Track and Field Team",
-                                "Junior @ Caltech",
+                                "Senior @ Caltech",
                             ],
                             autoStart: true,
                             loop: true,
@@ -29,7 +29,14 @@ export default function Home(initialData) {
             <Container fluid>
                 <Row>
                     <Col>
-                        <Card style={{ width: "18rem" }}>
+                        <Card
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                width: "50%",
+                            }}
+                        >
                             <Card.Img variant="top" src="/profile_photo.jpg" />
                             <Card.Body>
                                 <Card.Title style={{ textAlign: "center" }}>
@@ -39,20 +46,26 @@ export default function Home(initialData) {
                         </Card>
                     </Col>
                     <Col>
-                        <h4>
-                            <br />
-                            <br />
-                            <Typewriter
-                                options={{
-                                    strings:
-                                        "This is my website. It should give a deeper understanding of my skills and interests than a simple resume, and it has been more fun for me to create. Let me know if you have any ways I could improve it!",
-                                    autoStart: true,
-                                    loop: false,
-                                    delay: 60,
-                                    pauseFor: 3000,
-                                }}
-                            />
-                        </h4>
+                        <Card
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                padding: "30px",
+                            }}
+                        >
+                            I am a rising senior at the California Institute of
+                            Technology majoring in computer science. This
+                            summer, I am returning to Stripe as a Software
+                            Engineer intern. I have professional experience
+                            coding in Ruby, TypeScript, and Python. While my
+                            interest has largely been as a backend or full-stack
+                            engineer thus far, I would be very interested in
+                            pursuing machine learning roles in the future.
+                            Beyond my academic interests, I am a captain of the
+                            Caltech track team and a leadership team member for
+                            Caltech's LGBTQ+ organization.
+                        </Card>
                     </Col>
                 </Row>
                 <br />

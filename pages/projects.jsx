@@ -10,6 +10,38 @@ export default function Projects() {
                 <CarouselItem style={{ height: "400px" }}>
                     <Image
                         className="d-block w-100"
+                        src="/robot.JPG"
+                        layout="fill"
+                        objectFit="cover"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Localizing and Planning Robot</h3>
+                    </Carousel.Caption>
+                </CarouselItem>
+                <CarouselItem style={{ height: "400px" }}>
+                    <Image
+                        className="d-block w-100"
+                        src="/early-robot.jpeg"
+                        layout="fill"
+                        objectFit="cover"
+                        alt="second slide"
+                    />
+                </CarouselItem>
+            </Carousel>
+            <p>
+                I constructed a mobile robot capable of localization, mapping,
+                and planning around obstacles in a team of two. We utilized
+                Python and ROS2 to build the robot over the course of 10 weeks.
+                The robot was eventually able to showcase its abilities in a
+                "heist" competition where it had to avoid sentries and scan
+                "treasures" to score points.
+            </p>
+
+            <Carousel interval={10000} variant="dark">
+                <CarouselItem style={{ height: "400px" }}>
+                    <Image
+                        className="d-block w-100"
                         src="/space-launch-instructions.png"
                         layout="fill"
                         alt="First slide"
