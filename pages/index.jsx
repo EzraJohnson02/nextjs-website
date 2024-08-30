@@ -15,35 +15,53 @@ export default function Home(initialData) {
                     minHeight: "100vh",
                 }}
             >
-                <section className="jumbotron text-center">
-                    <div className="container">
-                        <h1>Hello! I'm Ezra Johnson</h1>
-                        <Typewriter
-                            options={{
-                                strings: [
-                                    "Software Engineer Intern @ Stripe",
-                                    "Captain of Varsity Track and Field Team",
-                                    "Senior @ Caltech",
-                                ],
-                                autoStart: true,
-                                loop: true,
-                                delay: 60,
-                                pauseFor: 3000,
-                            }}
-                        />
-                    </div>
-                </section>
+                {/* Container around the jumbotron for spacing */}
+                <Container
+                    fluid
+                    style={{
+                        padding: "20px",
+                        flexShrink: 0, // Prevent shrinking when other content is large
+                    }}
+                >
+                    <section className="jumbotron text-center">
+                        <div className="container">
+                            <h1>Hello! I'm Ezra Johnson</h1>
+                            <Typewriter
+                                options={{
+                                    strings: [
+                                        "Software Engineer Intern @ Stripe",
+                                        "Captain of Varsity Track and Field Team",
+                                        "Senior @ Caltech",
+                                    ],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 60,
+                                    pauseFor: 3000,
+                                }}
+                            />
+                        </div>
+                    </section>
+                </Container>
 
                 <Container
                     fluid
                     style={{
                         display: "flex",
+                        flexDirection: "row",
                         flexGrow: 1,
                         alignItems: "center",
                         justifyContent: "center",
+                        padding: "20px",
+                        overflow: "hidden", // Prevent overflow
                     }}
                 >
-                    <Row style={{ width: "100%", height: "100%" }}>
+                    <Row
+                        style={{
+                            width: "100%",
+                            maxWidth: "1200px",
+                            margin: "auto",
+                        }}
+                    >
                         <Col
                             xs={12}
                             md={4}
@@ -51,6 +69,7 @@ export default function Home(initialData) {
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
+                                marginBottom: "20px",
                             }}
                         >
                             <Card
@@ -58,7 +77,6 @@ export default function Home(initialData) {
                                     width: "100%",
                                     maxWidth: "300px",
                                     height: "auto",
-                                    margin: "auto",
                                 }}
                             >
                                 <Card.Img
@@ -78,9 +96,10 @@ export default function Home(initialData) {
                                 display: "flex",
                                 flexDirection: "column",
                                 justifyContent: "center",
+                                marginBottom: "20px",
                             }}
                         >
-                            <div style={{ padding: "0 20px" }}>
+                            <div>
                                 <h3>About Me</h3>
                                 <h5>
                                     I am a rising senior at the California
@@ -102,7 +121,7 @@ export default function Home(initialData) {
                     </Row>
                 </Container>
 
-                <Container>
+                <Container style={{ marginTop: "20px", paddingBottom: "20px" }}>
                     <Row className="text-center" style={{ flexWrap: "wrap" }}>
                         <Col xs={4} md={1}>
                             <Icon
